@@ -20,5 +20,5 @@ export function Main() {
         <Card />
       </div>
     </Container>
-  );
+  )
 }

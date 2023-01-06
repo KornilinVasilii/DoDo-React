@@ -1,5 +1,6 @@
 import { Container } from "../../components/Container/Container";
 import { Logo } from "../../components/Logo/Logo";
+import { Menu } from "../../components/Menu/Menu";
 import  s from "./Header.module.css"
 
 export function Header({ }) { 
@@ -12,6 +13,7 @@ export function Header({ }) {
           <p className={ s.call }>Звонок бесплатный</p>
         </div>
       </div>
+      <Menu/>
     </Container>
   );
 

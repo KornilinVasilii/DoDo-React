@@ -1,0 +1,20 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 41px;
+  padding-bottom: 30px;
+}
+.menu_item {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 467px;
+  align-items: center;
+}
+.menu_link {
+  text-decoration: none;
+  color: #000000;
+}
+.menu_link:hover {
+  color: #F96900
+}

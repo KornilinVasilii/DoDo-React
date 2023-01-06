@@ -1,8 +1,10 @@
 import './App.css'; 
+import './index.css'
+import { Header } from './UI/Header/Header';
 
 function App() {
   return (
-  <h1>Hello wwwww</h1>
+  <Header/>
   );
 }
 

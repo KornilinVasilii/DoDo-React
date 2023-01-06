@@ -1,4 +1,5 @@
 import s from './Menu.module.css'
+import { Button } from '../Button/Button'
 
 export function Menu() { 
   return (
@@ -10,7 +11,8 @@ export function Menu() {
             <li><a className={s.menu_link} href="#">Десерты</a></li>
             <li><a className={s.menu_link} href="#">Напитки</a></li>
             <li><a className={s.menu_link} href="#">Другие товары</a></li>
-          </ul>
+      </ul>
+             <Button text="Корзина" />
       </div>
   )
 }

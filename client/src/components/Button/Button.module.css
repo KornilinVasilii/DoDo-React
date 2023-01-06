@@ -1,5 +1,5 @@
 .button {
-  padding: 9px 29px 9 29px;
+  padding: 9px 29px 9px 29px;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 600;
@@ -8,7 +8,7 @@
   text-align: center;
   color: #ffffff;
   background: #f96900;
-  border-radius: 50px;
+  border-radius: 1000px;
   /* width: 120px;
   height: 40px; */
   border: 0;

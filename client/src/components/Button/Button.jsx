@@ -1,5 +1,6 @@
 import s from './Button.module.css'
 
-export function Button() {
-  return <button className={s.button}>Собрать</button>;
+
+export function Button({text}) {
+  return <button className={s.button}>{ text }</button>;
 }

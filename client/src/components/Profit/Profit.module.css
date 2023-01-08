@@ -1,0 +1,17 @@
+.profit {
+  margin-top: 199px;
+  width: 299px;
+}
+.sum {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+.profit_sum {
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.7;
+  color: #FFFFFF;
+}

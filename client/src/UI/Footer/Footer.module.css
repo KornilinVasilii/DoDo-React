@@ -1,0 +1,13 @@
+.footer {
+  background: #464C55;
+  height:max-content;
+  padding-top: 50px;
+  padding-bottom: 40px;
+ 
+}
+.wrapper {
+  display: flex;
+}
+.profit {
+  display: flex;
+}

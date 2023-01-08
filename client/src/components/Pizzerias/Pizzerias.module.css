@@ -1,0 +1,18 @@
+.pizzerias {
+  padding-top: 199px;
+  margin-left: 158px;
+  width: 248px;
+}
+.num {
+  font-weight: 600;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 26px;
+}
+.num_country {
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 22px;
+  color: #FFFFFF;
+  }

@@ -1,0 +1,7 @@
+.social {
+  text-align: end;
+  margin-top: 40px;
+  margin-left: 64px;
+  gap: 6px;
+  display: flex;
+}

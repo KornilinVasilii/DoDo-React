@@ -1,4 +1,9 @@
- .thumbs {
-  display: none;
-  /* width: 50%; */
-}
+ .slideCentral{
+  border-radius: 20px;
+ }
+ .slideLeft{
+  border-radius: 20px;
+ }
+ .slideRight {
+  border-radius: 20px;
+ }

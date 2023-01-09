@@ -7,3 +7,6 @@ body {
   font-family: 'Nunito',sans-serif; 
   font-weight: 400;
 }
+.thumbs-wrapper{
+  display: none;
+}

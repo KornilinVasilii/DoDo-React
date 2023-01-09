@@ -1,12 +1,25 @@
 import { Container } from '../Container/Container'
-import slider from './1.png'
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import slideCentral from './slide-central.webp'
+import slideLeft from './slide-left.png'
+import slideRight from './slide-reght.png'
+import "./Slider.module.css"
 
 export function Slider() { 
   return (
-    
-      <Container>
-        <img src={slider} alt="#" width="1060" height="300"/>
-        </Container>
-    
-  )
+    <Container>
+      <Carousel>
+        <div>
+          <img src={slideCentral} />
+        </div>
+        <div>
+          <img src={slideLeft} />
+        </div>
+        <div>
+          <img src={slideRight} />
+        </div>
+      </Carousel>
+    </Container>
+  );
 }

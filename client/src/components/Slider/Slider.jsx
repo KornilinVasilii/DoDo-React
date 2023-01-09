@@ -4,20 +4,20 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import slideCentral from './slide-central.webp'
 import slideLeft from './slide-left.png'
 import slideRight from './slide-reght.png'
-import "./Slider.module.css"
+import s from "./Slider.module.css"
 
 export function Slider() { 
   return (
     <Container>
       <Carousel>
         <div>
-          <img src={slideCentral} />
+          <img className={s.slideCentral} src={slideCentral} />
         </div>
         <div>
-          <img src={slideLeft} />
+          <img className={s.slideLeft} src={slideLeft} />
         </div>
         <div>
-          <img src={slideRight} />
+          <img className={s.slideRight} src={slideRight} />
         </div>
       </Carousel>
     </Container>

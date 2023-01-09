@@ -1,6 +1,6 @@
 .information {
   position: relative;
-  border-top: 1px solid #fff;
+  border-top: 1px solid rgb(129, 129, 129);
   margin-top: 40px;
   display: flex;
 }

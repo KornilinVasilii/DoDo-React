@@ -19,3 +19,15 @@
 .about {
   display: grid;
 }
+.work {
+  margin-left: 43px;
+  width: 143px;
+  max-height: 88px;
+  display: grid;
+}
+.partners {
+  width: 154px;
+}
+.interesting {
+  width: 166px;
+}

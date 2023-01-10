@@ -1,6 +1,7 @@
 .order {
-display: flex;
-justify-content: space-between;
+  padding: 70px 0 70px 0;
+  height: 100vh;
+  /* width: 610px; */
 }
 .order_title {
   font-weight: 600;
@@ -9,9 +10,18 @@ justify-content: space-between;
     margin-bottom: 30px;
     padding-top: 70px;
 }
-
-.order_info{
-
+.contacts {
+ 
+  padding-top: 30px;
+}
+.order_info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.number_phone {
+    display: flex;
+    justify-content: space-between;
 }
 .info {
   font-size: 16px;
@@ -31,10 +41,7 @@ justify-content: space-between;
   outline: none;
 }
 .details {
-  width: 500px;
+  width: 340px;
   height: 500px;
-  background-color: rgb(233, 233, 233);
-  padding-bottom: 70px;
-  /* margin-top: 149px; */
-  margin-bottom: 70px;
+  background-color: aqua;
 }

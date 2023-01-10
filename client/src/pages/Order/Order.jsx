@@ -9,20 +9,20 @@ export function Order() {
     <div>
       <BasketHeader />
       <Container>
-        <h1 className={s.order_title}>Заказ на доставку</h1>
+
+          <h1 className={s.order_title}>Заказ на доставку</h1>
         <div className={s.order}>
-          <div className={s.order_info}>
-            <p className={s.info}>Имя</p>
-            <p className={s.info}>Номер телефона</p>
-            <p className={s.info}>Куда доставить</p>
+            <div className={s.order_info}>
+              <p className={s.info}>Имя</p>
+              <p className={s.info}>Номер телефона</p>
+              <p className={s.info}>Куда доставить</p>
+            </div>
+            <div className={s.input}>
+              <Input />
+              <Input />
+              <input className={s.address} type='text'/>
+            </div>
           </div>
-          <div className={s.input}>
-            <Input />
-            <Input />
-            <input className={s.address} type="text" />
-          </div>
-          <div className={s.details}></div>
-        </div>
       </Container>
       <BasketFooter />
     </div>

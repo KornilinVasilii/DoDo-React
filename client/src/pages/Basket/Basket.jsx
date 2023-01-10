@@ -3,6 +3,7 @@ import { Logo } from "../../components/Logo/Logo"
 import { BasketHeader } from '../../widgets/BasketHeader/BasketHeader';
 import { Container } from '../../components/Container/Container';
 import { BasketFooter } from '../../widgets/BasketFooter/BasketFooter';
+import { BasketFooter } from '../BasketFooter/BasketFooter';
 
 export function Basket() {
   return (

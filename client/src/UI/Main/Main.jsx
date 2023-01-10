@@ -13,7 +13,7 @@ export function Main() {
       <Section>
         <Container>
           <Slider />
-          <H2 text="Новое и популярное" />
+          <H2 text="Новое и популярное"/>
           <div className={s.small_cards}>
               <SmallCard text="Цезарь" price="от 445 ₽" />
               <SmallCard text="Нежный лосось" price="от 445 ₽" />

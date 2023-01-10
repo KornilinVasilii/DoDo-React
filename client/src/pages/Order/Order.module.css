@@ -1,15 +1,17 @@
 .order {
   padding: 70px 0 70px 0;
   height: 100vh;
-  width: 610px;
+  /* width: 610px; */
 }
 .order_title {
   font-weight: 600;
     font-size: 36px;
     line-height: 49px;
+    margin-bottom: 30px;
+    padding-top: 70px;
 }
 .contacts {
-  /* display: flex; */
+ 
   padding-top: 30px;
 }
 .order_info {
@@ -23,5 +25,23 @@
 }
 .info {
   font-size: 16px;
-    line-height: 22px;
+  line-height: 22px;
+  
+}
+
+.address {
+  width: 430px;
+  height: 100px;
+  background: #FFFFFF;
+  border: 1px solid #D1D3D9;
+  border-radius: 5px;
+  padding: 12px 0 66px 12px;
+}
+.address:focus {
+  outline: none;
+}
+.details {
+  width: 340px;
+  height: 500px;
+  background-color: aqua;
 }

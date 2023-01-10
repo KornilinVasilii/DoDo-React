@@ -1,3 +1,5 @@
+import s from './Section.module.css'
 export function Section({ children }) {
-  return <>{children}</>;
+  return (
+    <div className={ s.section }>{children}</div>);
 }

@@ -1,9 +1,9 @@
-import s from './Order.module.css'
+import s from "./Order.module.css";
 import { BasketHeader } from "../../widgets/BasketHeader/BasketHeader";
-import { Container } from '../../components/Container/Container';
+import { Container } from "../../components/Container/Container";
+import { Input } from "../../widgets/Input/Input";
 
-export function Order() { 
-
+export function Order() {
   return (
     <div>
       <BasketHeader />
@@ -13,17 +13,20 @@ export function Order() {
           <div className={s.contacts}>
             <div className={s.order_info}>
               <p className={s.info}>Имя</p>
-              <input type="text" name="" id="" className={s.input_name} />
+              <Input />
             </div>
             <div className={s.order_info}>
               <p className={s.info}>Номер телефона</p>
-              <input type="text" className={s.input_phone} />
+              <Input />
             </div>
             <div className={s.order_info}>
               <p className={s.info}>Куда доставить</p>
-              <input type="text-aria" />
+              <input className={s.address} type="text-aria" />
             </div>
           </div>
+          <>
+            <div className={s.details}></div>
+          </>
         </div>
       </Container>
     </div>

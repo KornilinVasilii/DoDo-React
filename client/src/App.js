@@ -13,7 +13,7 @@ function App() {
       <Main />
       <Footer />
       <Basket />
-      <BasketFooter/>
+      {/* <BasketFooter/> */}
     </>
   );
 }

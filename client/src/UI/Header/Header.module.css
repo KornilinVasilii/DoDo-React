@@ -2,6 +2,7 @@
   padding-top: 25px;
   display: flex;
   justify-content: space-between;
+  background: #E5E5E5;;
 }
 .contacts {
   text-align: right;

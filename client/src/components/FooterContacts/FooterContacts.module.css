@@ -2,24 +2,8 @@
   margin-left: auto;
   text-align: end;
 }
-.tell {
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 26px;
-  color: #FFFFFF;
-  margin-top: 29px;
-  margin-bottom: 9px;
-  display: block;
-  text-decoration: none;
-}
-.call {
-  font-size: 15px;
-  line-height: 20px;
-  color: #FFFFFF;
-  opacity: 0.5;
-  
-}
-.email {
+
+  .email {
   font-size: 15px;
   line-height: 20px;
   color: #FFFFFF;

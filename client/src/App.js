@@ -3,14 +3,15 @@ import './index.css'
 import { Footer } from './UI/Footer/Footer';
 import { Header } from './UI/Header/Header';
 import { Main } from './UI/Main/Main'
-// import { Basket } from './pages/Basket/Basket';
+import { Basket } from './pages/Basket/Basket';
 
 function App() {
   return (
     <>
       <Header />
       <Main />
-      <Footer/>
+      <Footer />
+      <Basket/>
     </>
   );
 }

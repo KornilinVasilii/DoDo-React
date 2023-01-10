@@ -4,6 +4,7 @@ import { Footer } from './UI/Footer/Footer';
 import { Header } from './UI/Header/Header';
 import { Main } from './UI/Main/Main'
 import { Basket } from './pages/Basket/Basket';
+import { BasketFooter } from './pages/BasketFooter/BasketFooter'
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Header />
       <Main />
       <Footer />
-      <Basket/>
+      <Basket />
+      <BasketFooter/>
     </>
   );
 }

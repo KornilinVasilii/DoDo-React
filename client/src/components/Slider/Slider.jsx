@@ -11,13 +11,13 @@ export function Slider() {
     <Container>
       <Carousel>
         <div>
-          <img className={s.slideCentral} src={slideCentral} />
+          <img src={slideCentral} className={s.slideCentral} />
         </div>
         <div>
-          <img className={s.slideLeft} src={slideLeft} />
+          <img src={slideLeft} className={s.slideLeft} />
         </div>
         <div>
-          <img className={s.slideRight} src={slideRight} />
+          <img src={slideRight} className={s.slideRight} />
         </div>
       </Carousel>
     </Container>

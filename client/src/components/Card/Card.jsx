@@ -2,7 +2,7 @@ import pizza from "./pizza.png"
 import s from "./Card.module.css"
 import { Button } from "../Button/Button";
 
-export function Card({ }) { 
+export function Card() { 
   return (
     <div className={s.card}>
       <img src={pizza} alt="foto pizza" />

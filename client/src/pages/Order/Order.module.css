@@ -1,25 +1,17 @@
 .order {
-  padding: 70px 0 70px 0;
-  height: 100vh;
-  /* width: 610px; */
+display: flex;
+justify-content: space-between;
 }
 .order_title {
   font-weight: 600;
     font-size: 36px;
     line-height: 49px;
+    margin-bottom: 30px;
+    padding-top: 70px;
 }
-.contacts {
- 
-  padding-top: 30px;
-}
-.order_info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-.number_phone {
-    display: flex;
-    justify-content: space-between;
+
+.order_info{
+
 }
 .info {
   font-size: 16px;
@@ -39,7 +31,10 @@
   outline: none;
 }
 .details {
-  width: 340px;
+  width: 500px;
   height: 500px;
-  background-color: aqua;
+  background-color: rgb(233, 233, 233);
+  padding-bottom: 70px;
+  /* margin-top: 149px; */
+  margin-bottom: 70px;
 }

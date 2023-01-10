@@ -2,18 +2,15 @@ import { Button } from "../../components/Button/Button";
 import { Container } from "../../components/Container/Container";
 import { Logo } from "../../components/Logo/Logo";
 import { Menu } from "../../components/Menu/Menu";
-import  s from "./Header.module.css"
+import s from "./Header.module.css"
+import { Contacts } from "../../components/Contacts/Contacts"
 
 export function Header({ }) { 
   return (
     <Container>
       <div className={s.header}>
         <Logo />
-        <div className={s.contacts}>
-          <p className={s.tell}>8 800 302-00-60</p>
-          <p className={s.call}>Звонок бесплатный</p>
-   
-        </div>
+        <Contacts/>
       </div>
       <Menu />
     </Container>

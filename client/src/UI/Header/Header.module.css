@@ -2,23 +2,4 @@
   padding-top: 25px;
   display: flex;
   justify-content: space-between;
-  background: #E5E5E5;;
-}
-.contacts {
-  text-align: right;
-}
-.tell {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  font-family: 'Nunito';
-    font-style: normal;
-
-}
-.call {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-  color: #999999;
-
 }

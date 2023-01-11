@@ -6,6 +6,10 @@ import { BasketFooter } from '../../widgets/BasketFooter/BasketFooter';
 import { OrderButtonRight } from '../../widgets/OrderButtonRight/OrderButtonRight';
 import { OrderButtonLeft } from '../../widgets/OrderButtonLeft/OrderButtonLeft';
 import { ContainerOrder } from '../../components/ContainerOrder/ContainerOrder';
+import logo from './logo.png'
+import svg from './Vector.svg'
+import image from './image.png'
+
 export function Basket() {
   return (
     <>

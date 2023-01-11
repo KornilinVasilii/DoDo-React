@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Nunito',sans-serif; 
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   /* background: #E5E5E5; */
 }
-.thumbs-wrapper{
+.thumbs-wrapper {
   display: none;
 }
- .control-next{ 
+.control-next {
   border-radius: 0 20px 20px 0;
 }
 .control-prev {

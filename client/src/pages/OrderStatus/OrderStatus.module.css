@@ -1,3 +1,48 @@
 .status {
-  padding: 70px 170px 70px 170px;
+ display: flex;
+ justify-content: space-between;
+ position: relative;
+}
+.status::after {
+  content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 700px;
+    background-color: #E2E2E9;;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -31px;
+    border-radius: 2px;
+}
+.status_value {
+  margin-top: 4px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+
+}
+.order_num {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #73798C;
+}
+
+.btn__right {
+
+  border: none;
+  display: block;
+  padding: 13px 19px 13px 20px;
+  background-color: #F96900;
+  color: #ffffff;
+  border-radius: 50px;
+}
+.btn__right:active {
+  opacity: 0.7;
+} 
+.buttons {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
 }

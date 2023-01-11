@@ -1,14 +1,10 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 5563d31 (add order card)
 .basket_btn {
   display: flex;
   justify-content: space-between;
 }
 
 h1 {
-  border-bottom: 1px solid #e1e1e8;
+  /* border-bottom: 1px solid #e1e1e8; */
   padding-bottom: 30px;
 }
 .order {

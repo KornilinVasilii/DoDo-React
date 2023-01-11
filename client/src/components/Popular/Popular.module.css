@@ -1,3 +1,6 @@
+.popular {
+  padding-top: 40px;
+}
 .small_card {
   display: flex;
   align-items: center;

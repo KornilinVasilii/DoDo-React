@@ -12,15 +12,9 @@ import { BasketFooter } from './widgets/BasketFooter/BasketFooter'
 function App() {
   return (
     <>
-<<<<<<< HEAD
       <Header />
       <Main />
       <Footer />
-=======
-      {/* <Header /> */}
-      <Main />
-      {/* <Footer /> */}
->>>>>>> d43b04f (addsome1)
       <Basket />
       <Order />
       <OrderStatus/>

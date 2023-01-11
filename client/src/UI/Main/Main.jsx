@@ -7,7 +7,7 @@ import { Gridcards } from '../../components/Gridcards/Gridcards';
 // import { SmallCard } from '../../components/SmallCard/SmallCard';
 import s from './Main.module.css'
 import { Popular } from '../../components/Popular/Popular';
-
+import { Pizza } from '../../components/Pizza/Pizza'
 export function Main() {
   return (
     <>
@@ -17,12 +17,13 @@ export function Main() {
             <Popular text="Нежный лосось" price="от 445 ₽" />
           
           <H2 text="Пицца" />
-          <Gridcards>
+          {/* <Gridcards>
             <Card />
             <Card />
             <Card />
             <Card />
-          </Gridcards>
+          </Gridcards> */}
+          <Pizza/>
         </Container>
       </Section>
       <Section>

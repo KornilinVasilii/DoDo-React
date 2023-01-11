@@ -14,14 +14,8 @@ export function Main() {
       <Section>
         <Container>
           <Slider />
-          <H2 className={s.title} text="Новое и популярное" />
-          <div className={s.small_cards}>
-            {/* <SmallCard text="Цезарь" price="от 445 ₽" />
-            <SmallCard text="Нежный лосось" price="от 445 ₽" />
-            <SmallCard text="2 пиццы" price="899 ₽" />
-            <SmallCard text="Карбонара" price="от 395 ₽" /> */}
-            <Popular/>
-          </div>
+            <Popular text="Нежный лосось" price="от 445 ₽" />
+          
           <H2 text="Пицца" />
           <Gridcards>
             <Card />

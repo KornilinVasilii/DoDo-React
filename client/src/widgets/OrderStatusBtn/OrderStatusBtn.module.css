@@ -1,0 +1,20 @@
+.btn_left {
+  border: none;
+  display: block;
+  padding: 13px 19px 13px 20px;
+  background-color: #FFF0E6;
+  color: #D15700;
+  border-radius: 50px;
+}
+
+.btn_left:active {
+  opacity: 0.7;
+}
+.white {
+  background-color: #FFF0E6;
+  color: #D15700;
+}
+.orange {
+  color: #ffffff;
+  background-color: #F96900;
+}

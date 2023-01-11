@@ -1,6 +1,6 @@
 import s from './OrderButton.module.css'
 import prev from "./Vector 1.svg";
-export function OrderButton({ text }) { 
+export function OrderButtonLeft({ text }) { 
   return (
     <>
       <button className={s.oreder_button}>

@@ -29,20 +29,13 @@
   color: #73798C;
 }
 
-.btn__right {
-
-  border: none;
-  display: block;
-  padding: 13px 19px 13px 20px;
-  background-color: #F96900;
-  color: #ffffff;
-  border-radius: 50px;
-}
-.btn__right:active {
-  opacity: 0.7;
-} 
 .buttons {
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
+}
+.address {
+  margin-top: 44px;
+  font-size: 16px;
+  line-height: 22px;
 }

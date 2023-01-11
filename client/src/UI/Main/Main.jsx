@@ -4,8 +4,9 @@ import { H2 } from '../../components/H2/H2';
 import { Slider } from '../../components/Slider/Slider';
 import { Section } from '../../components/Section/Section';
 import { Gridcards } from '../../components/Gridcards/Gridcards';
-import { SmallCard } from '../../components/SmallCard/SmallCard';
+// import { SmallCard } from '../../components/SmallCard/SmallCard';
 import s from './Main.module.css'
+import { Popular } from '../../components/Popular/Popular';
 
 export function Main() {
   return (
@@ -15,10 +16,11 @@ export function Main() {
           <Slider />
           <H2 className={s.title} text="Новое и популярное" />
           <div className={s.small_cards}>
-            <SmallCard text="Цезарь" price="от 445 ₽" />
+            {/* <SmallCard text="Цезарь" price="от 445 ₽" />
             <SmallCard text="Нежный лосось" price="от 445 ₽" />
             <SmallCard text="2 пиццы" price="899 ₽" />
-            <SmallCard text="Карбонара" price="от 395 ₽" />
+            <SmallCard text="Карбонара" price="от 395 ₽" /> */}
+            <Popular/>
           </div>
           <H2 text="Пицца" />
           <Gridcards>

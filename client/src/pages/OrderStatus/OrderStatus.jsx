@@ -15,6 +15,7 @@ export function OrderStatus() {
             <h1 className={s.status_value}>Приняли</h1>
             <p className={s.status_value}>24 мин</p>
           </div>
+          <p className={ s.address }>Доставим по адресу: Москва, ул. 1-я Машиностроения, д. 10</p>
         </div>
         <div className={s.buttons}>
           <OrderStatusBtn color="white" text="Отменить заказ" />

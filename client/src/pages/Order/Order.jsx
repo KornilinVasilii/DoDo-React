@@ -3,9 +3,8 @@ import { BasketHeader } from "../../widgets/BasketHeader/BasketHeader";
 import { Container } from "../../components/Container/Container";
 import { Input } from "../../widgets/Input/Input";
 import { BasketFooter } from "../../widgets/BasketFooter/BasketFooter";
-
-import { OrderButton } from "../../widgets/OrderButtonLeft/OrderButton";
 import { OrderButtonRight } from "../../widgets/OrderButtonRight/OrderButtonRight";
+import { OrderButtonLeft } from "../../widgets/OrderButtonLeft/OrderButtonLeft";
 
 export function Order() {
   return (
@@ -28,7 +27,7 @@ export function Order() {
               <input className={s.address} type="text" />
             </div>
             <div className={s.order_btn}>
-              <OrderButton text="Назад в корзину" />
+              <OrderButtonLeft text="Назад в корзину" />
               <OrderButtonRight text="Оформить заказ  " />
             </div>
           </div>

@@ -5,6 +5,7 @@ import { Header } from './UI/Header/Header';
 import { Main } from './UI/Main/Main'
 import { Basket } from './pages/Basket/Basket';
 import { Order } from './pages/Order/Order';
+import { OrderStatus } from './pages/OrderStatus/OrderStatus';
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       <Main />
       <Footer />
       <Basket />
-      <Order/>
+      <Order />
+      <OrderStatus/>
     </>
   );
 }

@@ -1,5 +1,155 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5563d31 (add order card)
 .basket_btn {
   display: flex;
   justify-content: space-between;
+}
+
+h1 {
+  border-bottom: 1px solid #e1e1e8;
+  padding-bottom: 30px;
+}
+.order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e1e1e8;
+  padding: 25px 0 25px 0;
+}
+.order_pic {
+  display: flex;
+  align-items: center;
+}
+
+.order_info {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-left: 26px;
+}
+.order_name {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+.order_size {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #73798c;
+}
+.order_price {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: right;
+  color: #000000;
+}
+.order_num {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #73798c;
+}
+.order_elem {
+  display: flex;
+  justify-content: space-between;
+  width: 271px;
+}
+.button {
+  display: flex;
+  justify-content: space-around;
+  background: #f3f3f7;
+  width: 96px;
+  height: 32px;
+  border-radius: 50px;
+  align-items: center;
+}
+
+.order_button {
+  border: none;
+  width: 15px;
+  height: 30px;
+  color: #73798C;
+  font-size: 18px;
+}
+.add {
+  padding: 60px 0 20px 0;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+.order_cards {
+  display: flex;
+  gap: 20px;
+}
+.order_card {
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #e1e1e8;
+  border-radius: 10px;
+  width: 250px;
+  align-items: center;
+}
+.order_card_logo {
+  padding: 14px 22px 14px 18px;
+}
+.order_card_name {
+  font-family: 'Nunito';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  margin: 12px 8px;
+}
+.order_card_price {
+  display: block;
+  font-family: 'Nunito';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #d15700;
+  background: #fff0e6;
+  border-radius: 1000px;
+  padding: 6px 29px;
+  margin-bottom: 14px;
+  width: 96px;
+}
+.order_summ {
+  display: flex;
+  justify-content: right;
+  gap:14px;
+  align-items: center;
+  padding: 21px 0 26px 0;
+}
+.orger_sum {
+font-family: 'Nunito';
+font-weight: 600;
+font-size: 21px;
+line-height: 29px;
+color: #000000;
+}
+.order_sum_span {
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 35px;
+color: #F96900;
 }

@@ -4,7 +4,8 @@ import  pizza  from './smallpizza.png'
  export function Popular({ text, price }) { 
   return (
     <div className={ s.popular }>
-        <H2 text="Новое и популярное"/>
+      <H2 text="Новое и популярное" />
+      <></>
       <div className={s.small_card}>
         <img src={pizza} alt="pizza" className={s.small_img} />
         <div className={s.small_info}>

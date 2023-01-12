@@ -1,0 +1,20 @@
+.btn_modal {
+  display: block;
+  cursor: pointer;
+  border: none;
+  background: #f96900;
+  border-radius: 1000px;
+  width: 320px;
+  height: 48px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn_modal:hover {
+  opacity: 0.7;
+}

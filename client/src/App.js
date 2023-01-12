@@ -6,8 +6,8 @@ import { Main } from './UI/Main/Main'
 import { Basket } from './pages/Basket/Basket';
 import { Order } from './pages/Order/Order';
 import { OrderStatus } from './pages/OrderStatus/OrderStatus';
-
-import { BasketFooter } from './widgets/BasketFooter/BasketFooter'
+// import { BasketFooter } from './widgets/BasketFooter/BasketFooter';
+import { ModalWindowTwo } from './pages/ModalWindowTwo/ModalWindowTwo'; 
 
 function App() {
   return (
@@ -17,7 +17,8 @@ function App() {
       <Footer />
       <Basket />
       <Order />
-      <OrderStatus/>
+      <OrderStatus />
+      <ModalWindowTwo/>
     </>
   );
 }

@@ -149,3 +149,8 @@ font-size: 26px;
 line-height: 35px;
 color: #F96900;
 }
+
+.order_line {
+  display: block;
+  border-bottom: 1px solid #E1E1E8;;
+}

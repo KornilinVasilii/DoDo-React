@@ -2,12 +2,12 @@
   display: flex;
   gap: 40px;
   padding: 13px 41px 13px 18px;
-  background: #F3F3F7;
+  background: #f3f3f7;
   border-radius: 1000px;
   border: none;
   cursor: pointer;
   margin-top: 70px;
- align-items: center;
+  align-items: center;
 }
 
 .oreder_button:active {
@@ -17,8 +17,8 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  text-align: center;  
-  color: #73798C
+  text-align: center;
+  color: #73798c;
 }
 .prev {
   text-align: center;

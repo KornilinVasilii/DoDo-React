@@ -8,22 +8,20 @@ import { Gridcards } from '../../components/Gridcards/Gridcards';
 import s from './Main.module.css'
 import { Popular } from '../../components/Popular/Popular';
 import { Pizza } from '../../components/Pizza/Pizza'
+import { Snacks } from '../../components/Snacks/Snacks';
+import { Desserts } from '../../components/Desserts/Desserts';
+import { Drinks } from '../../components/Drinks/Drinks';
+
 export function Main() {
   return (
     <>
       <Section>
         <Container>
           <Slider />
-            <Popular text="Нежный лосось" price="от 445 ₽" />
-          
+          <Popular text="Нежный лосось" price="от 445 ₽" />
+
           <H2 text="Пицца" />
-          {/* <Gridcards>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-          </Gridcards> */}
-          <Pizza/>
+          <Pizza />
         </Container>
       </Section>
       <Section>
@@ -35,6 +33,12 @@ export function Main() {
             <Card />
             <Card />
           </Gridcards>
+          <H2 text="Закуски" />
+          <Snacks />
+          <H2 text="Десерты" />
+          <Desserts />
+          <H2 text="Напитки" />
+          <Drinks/>
         </Container>
       </Section>
     </>

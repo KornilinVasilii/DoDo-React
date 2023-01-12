@@ -1,0 +1,64 @@
+.win{
+  background-color: #2e2e2e;
+  padding: 50px;
+}
+
+.modalWindow {
+  margin: 0 auto;
+  width: 920px;
+  height: 610px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.close {
+position: absolute;
+right: -50px;
+top: 20px;
+}
+.module_img {
+  padding: 124px 44px 78px 93px;
+}
+.ellipse {
+  width: 458px;
+  height: 458px;
+  position: absolute;
+  left: 40px;
+  top: 70px;
+}
+
+.toping {
+  background-color: #FCFCFC;
+  width: 380px;
+  padding: 30px;
+  border-radius: 0 20px 20px 0;
+}
+.pizza_name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 3px;
+}
+.about_pizza {
+  font-size: 14px;
+  line-height: 19px;
+  color: #73798C;
+}
+.topings {
+  padding-top: 17px ;
+}
+.top {
+  margin-top: 17px;
+  background-color: #ffffff;
+  width: 100px;
+  height: 150px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(6, 5, 50, 0.05);
+  text-align: center;
+}
+input {
+  cursor: pointer;
+  
+}

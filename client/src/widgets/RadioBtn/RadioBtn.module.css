@@ -1,0 +1,29 @@
+.form_toggle {
+  display: flex;
+  overflow: hidden;
+  margin-top: 12px;
+  background-color: #F3F3F7;
+  border-radius: 100px;
+}
+.form_toggle_item {
+  width: 320px;
+  padding: 2px 3px;
+}
+.form_toggle_item input[type=radio] {
+  display: none;
+}
+.form_toggle_item label {
+  display: inline-block;
+  padding: 5px 38px;
+  line-height: 34px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.form_toggle input[type=radio]:checked+label {
+  background: #ffffff;
+  border-radius: 100px;
+  width: 150px;
+}

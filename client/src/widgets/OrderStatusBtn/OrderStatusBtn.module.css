@@ -5,6 +5,7 @@
   background-color: #FFF0E6;
   color: #D15700;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .btn_left:active {

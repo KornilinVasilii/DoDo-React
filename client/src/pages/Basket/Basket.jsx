@@ -17,6 +17,7 @@ export function Basket() {
       <ContainerOrder>
         <div className={s.basket}>
           <h1>Корзина</h1>
+            <span className={s.order_line}></span>
           <div className={s.order}>
             <div className={s.order_pic}>
               <img src={logo} alt="" className={s.order_logo} />

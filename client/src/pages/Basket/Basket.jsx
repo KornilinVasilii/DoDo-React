@@ -6,6 +6,7 @@ import { BasketFooter } from '../../widgets/BasketFooter/BasketFooter';
 import { OrderButtonRight } from '../../widgets/OrderButtonRight/OrderButtonRight';
 import { OrderButtonLeft } from '../../widgets/OrderButtonLeft/OrderButtonLeft';
 import { ContainerOrder } from '../../components/ContainerOrder/ContainerOrder';
+import { Link } from "react-router-dom";
 import logo from './logo.png'
 import svg from './Vector.svg'
 import image from './image.png'
@@ -39,7 +40,7 @@ export function Basket() {
             </div>
           </div>
 
-          <div className={s.order}>
+          {/* <div className={s.order}>
             <div className={s.order_pic}>
               <img src={logo} alt="" className={s.order_logo} />
               <div className={s.order_info}>
@@ -58,7 +59,7 @@ export function Basket() {
               <p className={s.order_price}>3 799 ₽</p>
               <img src={svg} alt="svg" className="order_svg" />
             </div>
-          </div>
+          </div> */}
 
           <p className={s.add}>Добавить к заказу?</p>
 
@@ -85,8 +86,12 @@ export function Basket() {
             <span className={s.order_sum_span}>4 792 ₽</span>
           </div>
           <div className={s.basket_btn}>
+            <Link className={ s.link } to='/home'>
             <OrderButtonLeft text="Вернуться в меню" />
+            </Link >
+            <Link className={ s.secondLink } to='/order'>
             <OrderButtonRight text="Оформить заказ" />
+            </Link>
           </div>
         </div>
       </ContainerOrder>

@@ -154,3 +154,9 @@ color: #F96900;
   display: block;
   border-bottom: 1px solid #E1E1E8;;
 }
+.link {
+  text-decoration: none;
+}
+.secondLink {
+  text-decoration: none;
+}

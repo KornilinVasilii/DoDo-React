@@ -5,7 +5,7 @@ import { Input } from "../../widgets/Input/Input";
 import { BasketFooter } from "../../widgets/BasketFooter/BasketFooter";
 import { OrderButtonRight } from "../../widgets/OrderButtonRight/OrderButtonRight";
 import { OrderButtonLeft } from "../../widgets/OrderButtonLeft/OrderButtonLeft";
-
+import { Link } from "react-router-dom";
 export function Order() {
   return (
     <div>
@@ -27,8 +27,12 @@ export function Order() {
               <input className={s.address} type="text" />
             </div>
             <div className={s.order_btn}>
+              <Link className={ s.link } to='/basket'>
               <OrderButtonLeft text="Назад в корзину" />
-              <OrderButtonRight text="Оформить заказ  " />
+              </Link>
+              <Link className={ s.secondlink } to='/orderstatus'>
+              <OrderButtonRight text="Оформить заказ" />
+              </Link>
             </div>
           </div>
           <div className={s.details}>

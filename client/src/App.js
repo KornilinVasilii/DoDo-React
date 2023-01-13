@@ -7,7 +7,7 @@ import { Basket } from './pages/Basket/Basket';
 import { Order } from './pages/Order/Order';
 import { OrderStatus } from './pages/OrderStatus/OrderStatus';
 import { ModalWindowOne } from './pages/ ModalWindowOne/ ModalWindowOne';
-
+import { ModalWindowTwo } from './pages/ModalWindowTwo/ModalWindowTwo'
 function App() {
   return (
     <>
@@ -17,7 +17,8 @@ function App() {
       <Basket />
       <Order />
       <OrderStatus />
-      <ModalWindowOne/>
+      <ModalWindowOne />
+      <ModalWindowTwo/>
     </>
   );
 }

@@ -39,3 +39,6 @@
   font-size: 16px;
   line-height: 22px;
 }
+.link {
+  text-decoration: none;
+}

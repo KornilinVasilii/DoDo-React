@@ -16,7 +16,10 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-         <Route path="" element={<Basket />} />
+        <Route path="/basket" element={<Basket />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/order" element={<Order />} />
+        <Route path='/orderstatus' element={ <OrderStatus/> }/>
         {/* <Header />
         <Main />
         <Footer />

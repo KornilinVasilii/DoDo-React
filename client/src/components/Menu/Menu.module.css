@@ -18,3 +18,6 @@
 .menu_link:hover {
   color: #F96900
 }
+.link {
+  text-decoration: none;
+}

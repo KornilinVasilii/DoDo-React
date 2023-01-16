@@ -36,7 +36,7 @@ export function Basket() {
                 <button className={s.order_button}>+</button>
               </div>
               <p className={s.order_price}>3 799 ₽</p>
-              <img src={svg} alt="svg" className="order_svg" />
+              <img src={svg} alt="svg" className={s.order_svg} />
             </div>
           </div>
 

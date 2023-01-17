@@ -4,14 +4,14 @@ import { Header } from '../../UI/Header/Header';
 import { Section } from '../../components/Section/Section';
 import { Container } from '../../components/Container/Container';
 
-export function PizzaPage() {
+export function PizzaPage({ data }) {
   return (
     <Section>
       <Container>
         <Header />
-        <Pizza />
-        <Footer />
+        <Pizza data={ data } />
       </Container>
+        <Footer />
     </Section>
   );
 }

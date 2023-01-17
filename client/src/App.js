@@ -1,8 +1,5 @@
 import "./App.css";
 import "./index.css";
-import { Footer } from './UI/Footer/Footer';
-import { Header } from './UI/Header/Header';
-import { Main } from './UI/Main/Main';
 import { Basket } from "./pages/Basket/Basket";
 import { Order } from "./pages/Order/Order";
 import { OrderStatus } from "./pages/OrderStatus/OrderStatus";
@@ -19,20 +16,7 @@ import { OtherPage } from './pages/OtherPage/OtherPage'
 import { useState,useEffect } from "react";
 
 function App() {
-  const [data, setData] = useState({});
-  
-  useEffect(() => {
-    fetch("http://localhost:5000/api", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
-    })
-      .then((data) => data.json())
-      .then((d) => setData(d));
-  }, []);
-  console.log(data)
+
   return (
     <>
       <Routes>
@@ -48,9 +32,6 @@ function App() {
         <Route path="/desserts" element={<DessertsPage />} />
         <Route path="/other" element={<OtherPage />} />
       </Routes>
-        <Header />
-      <Main data={ data }  />
-        <Footer />
       <ModalWindowOne />
     </>
   );

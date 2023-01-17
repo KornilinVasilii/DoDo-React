@@ -10,8 +10,8 @@ export function OtherPage() {
       <Container>
         <Header />
         <Other />
-        <Footer />
       </Container>
+        <Footer />
     </Section>
   );
 }

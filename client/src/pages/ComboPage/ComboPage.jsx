@@ -10,8 +10,8 @@ export function ComboPage() {
       <Container>
         <Header />
         <Combo />
-        <Footer />
       </Container>
+        <Footer />
     </Section>
   );
 }

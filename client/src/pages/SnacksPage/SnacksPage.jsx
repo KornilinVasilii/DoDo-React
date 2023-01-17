@@ -10,8 +10,8 @@ export function SnacksPage() {
       <Container>
         <Header />
         <Snacks />
-        <Footer />
       </Container>
+        <Footer />
     </Section>
   );
 }

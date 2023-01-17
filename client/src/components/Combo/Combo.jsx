@@ -2,13 +2,15 @@ import { Card } from "../Card/Card";
 import { Gridcards } from "../Gridcards/Gridcards";
 import { H2 } from "../H2/H2";
 
-export function Combo() { 
+export function Combo({ data }) { 
   return (
     <div>
-        <H2 text="Комбо"/>
+      <H2 text="Комбо" />
       <Gridcards>
-        <Card/>
+        {data?.map((el, i) => (
+          <Card key={i} {...el} />
+        ))}
       </Gridcards>
     </div>
-  )
+  );
 }

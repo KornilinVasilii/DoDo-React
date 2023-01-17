@@ -1,39 +1,28 @@
-import s from "./Menu.module.css";
-import { Button } from "../Button/Button";
-import { Link } from "react-router-dom";
+import s from './Menu.module.css';
+import { Button } from '../Button/Button';
+import { Link } from 'react-router-dom';
+
 export function Menu() {
   return (
     <div className={s.menu}>
       <ul className={s.menu_item}>
         <li>
-          <a className={s.menu_link} href="#">
-            Пицца
-          </a>
+          <Link className={s.menu_link} to="/pizza">Пицца</Link>
         </li>
         <li>
-          <a className={s.menu_link} href="#">
-            Комбо
-          </a>
+          <Link className={s.menu_link} to="/combo">Комбо</Link>
         </li>
         <li>
-          <a className={s.menu_link} href="#">
-            Закуски
-          </a>
+          <Link className={s.menu_link} to="/snacks">Закуски</Link>
         </li>
         <li>
-          <a className={s.menu_link} href="#">
-            Десерты
-          </a>
+          <Link className={s.menu_link} to="/desserts">Десерты</Link>
         </li>
         <li>
-          <a className={s.menu_link} href="#">
-            Напитки
-          </a>
+          <Link className={s.menu_link} to="/drinks">Напитки</Link>
         </li>
         <li>
-          <a className={s.menu_link} href="#">
-            Другие товары
-          </a>
+          <Link className={s.menu_link} to="/other">Другие товары</Link>
         </li>
       </ul>
 

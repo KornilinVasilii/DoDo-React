@@ -8,6 +8,7 @@ import { Snacks } from '../../components/Snacks/Snacks';
 import { Desserts } from '../../components/Desserts/Desserts';
 import { Drinks } from '../../components/Drinks/Drinks';
 import { Combo } from '../../components/Combo/Combo';
+import { Other } from '../../components/Other/Other';
 
 export function Main() {
   return (
@@ -20,7 +21,7 @@ export function Main() {
           <Combo/>
           <Snacks />
           <Desserts />
-          <Drinks/>
+          <Drinks />
         </Container>
       </Section>
     </>

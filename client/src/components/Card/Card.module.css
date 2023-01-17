@@ -2,6 +2,7 @@
   max-width: 250px;
   max-height: max-content;
   text-align: left;
+  display: grid;
 }
 
 .img {
@@ -22,7 +23,7 @@
 }
 
 .p {
-  margin-bottom: 40px; 
+  /* margin-bottom: 40px;  */
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;

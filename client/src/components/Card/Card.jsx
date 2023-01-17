@@ -8,9 +8,9 @@ export function Card({ img,title, description,price }) {
     <div className={s.card}>
       <img src={img} alt="foto pizza" />
       <h3 className={s.h3}>{title}</h3>
-      <p>{description}</p>
+      <p className={ s.p}>{description}</p>
       <div className={s.order}>
-        <p className={s.price}>{ price } P</p>
+        <p className={s.price}>{price} ₽</p>
         <Button text="Собрать" />
       </div>
     </div>

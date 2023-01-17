@@ -1,19 +1,18 @@
 import { Gridcards } from '../Gridcards/Gridcards'
 import { Card } from '../Card/Card'
 import { H2 } from '../H2/H2';
-import { Section } from '../Section/Section';
-import { Container } from '../Container/Container';
-export function Pizza() { 
+
+export function Pizza({ data }) { 
+  // console.log(data.products1.pizza)
   return (
-    <Section>
-      <Container>
-        <div>
-          <H2 text="Пицца" />
-          <Gridcards>
-            <Card />
-          </Gridcards>
-        </div>
-      </Container>
-    </Section>
+    <div>
+      <H2 text="Пицца" />
+      <Gridcards>
+        {data?.map((el, i) => (
+          <Card key={i} {...el} />
+        ))
+        }
+      </Gridcards>
+    </div>
   );
 }

@@ -1,13 +1,13 @@
 .card {
-  width: 250px;
-  height: auto;
+  max-width: 250px;
+  max-height: max-content;
   text-align: left;
 }
 
 .img {
   margin: 0 15px 0 15px 0;
-  width: 220;
-  height: 220;
+  width: 220px;
+  height: 220px;
 }
 
 .h3 {
@@ -18,16 +18,18 @@
   font-size: 20px;
   line-height: 27px;
   color: #000000;
+  
 }
 
 .p {
-  padding-bottom: 40px; /* под вопросом*/
+  margin-bottom: 40px; 
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   color: #73798c;
+  margin-top: 10px;
 }
 
 .order {

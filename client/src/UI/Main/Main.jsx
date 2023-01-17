@@ -10,18 +10,19 @@ import { Drinks } from '../../components/Drinks/Drinks';
 import { Combo } from '../../components/Combo/Combo';
 import { Other } from '../../components/Other/Other';
 
-export function Main() {
+export function Main({ data }) {
+  console.log(data)
   return (
     <>
       <Section>
         <Container>
           <Slider />
           <Popular text="Нежный лосось" price="от 445 ₽" />
-          <Pizza />
-          <Combo/>
-          <Snacks />
-          <Desserts />
-          <Drinks />
+          <Pizza data={data?.products1?.pizzas} />
+          <Combo data={data?.products1?.combo} />
+          <Snacks data={data?.products1?.hot} />
+          <Desserts data={data?.products1?.desserts} />
+          <Drinks data={data?.products1?.sodas} />
         </Container>
       </Section>
     </>

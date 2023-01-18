@@ -24,7 +24,7 @@ export function Combo() {
       <H2 text="Комбо" />
       <Gridcards>
         {combo.map((el, i) => (
-          <Card key={i} {...el} />
+          <Card key={i} {...el} text="Выбрать" />
         ))}
       </Gridcards>
     </div>

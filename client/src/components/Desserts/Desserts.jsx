@@ -23,7 +23,7 @@ export function Desserts() {
       <H2 text="Десерты" />
       <Gridcards>
         {desserts.map((el, i) => (
-          <Card key={i} {...el} />
+          <Card key={i} {...el} text='В корзину'/>
         ))}
       </Gridcards>
     </div>

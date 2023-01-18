@@ -21,7 +21,7 @@ export function Popular() {
   return (
     <div className={s.popular}>
       <H2 text="Новое и популярное" />
-      <Gridcards>
+      {/* <Gridcards> */}
             {/* {popular.map((el, i) => (
         <SmallCards key={i} {...el} />
       ))} */}

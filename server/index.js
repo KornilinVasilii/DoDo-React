@@ -5,9 +5,9 @@ import drinks from './src/pages/drinks.json' assert {type: 'json'};
 import pizza from './src/pages/pizzas.json' assert {type: 'json'};
 import combo from './src/pages/combo.json' assert {type: 'json'};
 import snacks from './src/pages/snacks.json' assert {type: 'json'};
-import desserts from './src/pages/dessert.json' assert {type: 'json'};
+import desserts from './src/pages/desserts.json' assert {type: 'json'};
 import other from './src/pages/other.json' assert {type: 'json'};
-
+import novelty from "./src/pages/novelty.json" assert { type: "json" };
 const app =  express()
 
 const host = '127.0.0.1'
@@ -21,7 +21,7 @@ app.use(
     express.static(`./assets/images/`)
 );
 
-app.get('/api', (req, res)=>{
+app.get('/data', (req, res)=>{
     return res.status(201).json(data)
 })
 app.get('/pizzas', (req, res)=>{
@@ -42,6 +42,9 @@ app.get('/drinks', (req, res)=>{
 app.get('/other', (req, res)=>{
     return res.status(201).json(other)
 })
+app.get("/novelty", (req, res) => {
+  return res.status(201).json(novelty);
+});
 
 app.listen(port,host, ()=>{
     console.log(`Server listens http://${host}:${port}`)

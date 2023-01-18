@@ -32,7 +32,7 @@ function App() {
         <Route path="/desserts" element={<DessertsPage />} />
         <Route path="/other" element={<OtherPage />} />
       </Routes>
-      <ModalWindowOne />
+      {/* <ModalWindowOne /> */}
     </>
   );
 }

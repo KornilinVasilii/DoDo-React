@@ -13,7 +13,6 @@ import { PizzaPage } from './pages/PizzaPage/PizzaPage';
 import { ComboPage } from './pages/ComboPage/ComboPage';
 import { DessertsPage } from './pages/DessertsPage/DessertsPage';
 import { OtherPage } from './pages/OtherPage/OtherPage'
-import { useState,useEffect } from "react";
 
 function App() {
 

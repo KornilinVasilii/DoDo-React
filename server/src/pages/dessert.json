@@ -1,5 +1,5 @@
 {
-  "dessert":[
+  "desserts":[
     {
       "title": "Яблочный пирог",
       "img": "http://127.0.0.1:5000/photos/items/desserts/dessert-1.webp",

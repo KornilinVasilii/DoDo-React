@@ -25,7 +25,7 @@ export function Popular() {
             {/* {popular.map((el, i) => (
         <SmallCards key={i} {...el} />
       ))} */}
-      </Gridcards>
+      <Gridcards/>
     </div>
   );
 }

@@ -1,12 +1,27 @@
 import { Gridcards } from '../Gridcards/Gridcards';
 import { Card } from '../Card/Card';
 import { H2 } from '../H2/H2';
-export function Desserts({data }) {
+import { useState, useEffect } from 'react';
+
+export function Desserts() {
+      const [desserts, setDesserts] = useState([]);
+console.log(desserts);
+      useEffect(() => {
+        fetch('http://localhost:5000/desserts', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+          },
+        })
+          .then((desserts) => desserts.json())
+          .then((d) => setDesserts(d.desserts));
+      }, []);
   return (
     <div>
       <H2 text="Десерты" />
       <Gridcards>
-        {data?.map((el, i) => (
+        {desserts.map((el, i) => (
           <Card key={i} {...el} />
         ))}
       </Gridcards>

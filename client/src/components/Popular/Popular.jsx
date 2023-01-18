@@ -5,27 +5,28 @@ import s from './Popular.module.css'
 import { useState, useEffect } from 'react';
 
 export function Popular() { 
-    // const [popular, setPopular] = useState([]);
+  const [novelty, setNovelty] = useState([]);
 
-    // useEffect(() => {
-    //   fetch('http://localhost:5000/combo', {
-    //     method: 'GET',
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //       'Access-Control-Allow-Origin': '*',
-    //     },
-    //   })
-    //     .then((popular) => popular.json())
-    //     .then((d) => setPopular(d.popular));
-    // }, []);
+    useEffect(() => {
+      fetch("http://localhost:5000/novelty", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      })
+        .then((novelty) => novelty.json())
+        .then((d) => setNovelty(d.novelty));
+    }, []);
+  console.log(novelty)
   return (
     <div className={s.popular}>
       <H2 text="Новое и популярное" />
-      {/* <Gridcards> */}
-            {/* {popular.map((el, i) => (
-        <SmallCards key={i} {...el} />
-      ))} */}
-      <Gridcards/>
+      <Gridcards>
+        {novelty.map((el, i) => (
+          <SmallCards key={i} {...el} />
+        ))}
+      </Gridcards>
     </div>
   );
 }

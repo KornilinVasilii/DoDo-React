@@ -1,8 +1,7 @@
-import pizza from "./pizza.png"
 import s from "./Card.module.css"
 import { Button } from "../Button/Button";
 
-export function Card({ img,title, description,price }) { 
+export function Card({ img,title, description,price, text }) { 
   
   return (
     <div className={s.card}>
@@ -11,7 +10,7 @@ export function Card({ img,title, description,price }) {
       <p className={ s.p}>{description}</p>
       <div className={s.order}>
         <p className={s.price}>{price} ₽</p>
-        <Button text="Собрать" />
+        <Button text={ text} />
       </div>
     </div>
   );

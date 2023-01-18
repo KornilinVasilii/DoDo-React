@@ -23,7 +23,7 @@ export function Other() {
       <H2 text="Другие товары" />
       <Gridcards>
         {other.map((el, i) => (
-          <Card key={i} {...el} />
+          <Card key={i} {...el} text="В корзину" />
         ))}
       </Gridcards>
     </div>

@@ -4,8 +4,8 @@ import { H2 } from '../H2/H2';
 import { useState, useEffect } from 'react';
 
 export function Desserts() {
-      const [desserts, setDesserts] = useState([]);
-console.log(desserts);
+  const [desserts, setDesserts] = useState([]);
+
       useEffect(() => {
         fetch('http://localhost:5000/desserts', {
           method: 'GET',
@@ -17,12 +17,13 @@ console.log(desserts);
           .then((desserts) => desserts.json())
           .then((d) => setDesserts(d.desserts));
       }, []);
+  console.log(desserts);
   return (
     <div>
       <H2 text="Десерты" />
       <Gridcards>
         {desserts.map((el, i) => (
-          <Card key={i} {...el} />
+          <Card key={i} {...el} text='В корзину'/>
         ))}
       </Gridcards>
     </div>

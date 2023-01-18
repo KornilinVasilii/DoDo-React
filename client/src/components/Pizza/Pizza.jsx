@@ -24,7 +24,7 @@ export function Pizza() {
       <H2 text="Пицца" />
       <Gridcards>
         {pizza.map((el, i) => (
-          <Card key={i} {...el} />
+          <Card key={i} {...el} text="Выбрать" />
         ))}
       </Gridcards>
     </div>

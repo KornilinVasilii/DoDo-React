@@ -4,14 +4,14 @@ import { Header } from '../../UI/Header/Header';
 import { Section } from '../../components/Section/Section';
 import { Container } from '../../components/Container/Container';
 
-export function ComboPage() {
+export function ComboPage({ setModalActive }) {
   return (
     <Section>
       <Container>
         <Header />
-        <Combo />
+        <Combo setModalActive={setModalActive} />
       </Container>
-        <Footer />
+      <Footer />
     </Section>
   );
 }

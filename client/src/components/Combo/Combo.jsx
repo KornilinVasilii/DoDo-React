@@ -3,15 +3,15 @@ import { Gridcards } from '../Gridcards/Gridcards';
 import { H2 } from '../H2/H2';
 import { useState, useEffect } from 'react';
 
-export function Combo() {
+export function Combo({ setModalActive }) {
   const [combo, setCombo] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/combo', {
-      method: 'GET',
+    fetch("http://localhost:5000/combo", {
+      method: "GET",
       headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
     })
       .then((combo) => combo.json())
@@ -24,7 +24,12 @@ export function Combo() {
       <H2 text="Комбо" />
       <Gridcards>
         {combo.map((el, i) => (
-          <Card key={i} {...el} text="Выбрать" />
+          <Card
+            key={i}
+            {...el}
+            text="Выбрать"
+            setModalActive={setModalActive}
+          />
         ))}
       </Gridcards>
     </div>

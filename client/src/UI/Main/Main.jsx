@@ -9,20 +9,19 @@ import { Drinks } from '../../components/Drinks/Drinks';
 import { Combo } from '../../components/Combo/Combo';
 import { Other } from '../../components/Other/Other';
 
-export function Main() {
-
+export function Main({ setModalActive }) {
   return (
     <>
       <Section>
         <Container>
           <Slider />
           <Popular />
-          <Pizza />
-          <Combo/>
+          <Pizza setModalActive={setModalActive} />
+          <Combo setModalActive={setModalActive} />
           <Snacks />
           <Desserts />
-          <Drinks  />
-          <Other  />
+          <Drinks />
+          <Other />
         </Container>
       </Section>
     </>

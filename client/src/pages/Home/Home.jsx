@@ -3,11 +3,11 @@ import { Header } from "../../UI/Header/Header";
 import { Main } from "../../UI/Main/Main";
 
 
-export function Home() {
+export function Home({ setModalActive }) {
   return (
     <>
       <Header />
-      <Main />
+      <Main setModalActive={setModalActive} />
       <Footer />
     </>
   );

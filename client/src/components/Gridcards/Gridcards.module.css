@@ -16,7 +16,13 @@
 @media (max-width: 940px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
-      max-width: 70%;
+      max-width: 80%;
         margin: 0 auto;
+  }
+}@media (max-width: 640px) {
+  .cards {
+    grid-template-columns: repeat(1,1fr);
+    max-width: 80%;
+    margin: 0 auto;
   }
 }

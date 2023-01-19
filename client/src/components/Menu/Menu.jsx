@@ -7,7 +7,7 @@ export function Menu() {
     <div className={s.menu}>
       <ul className={s.menu_item}>
         <li>
-          <Link className={s.menu_link} to="/pizza">Пицца</Link>
+          <Link className={s.menu_link} to="/pizza" >Пицца</Link>
         </li>
         <li>
           <Link className={s.menu_link} to="/combo">Комбо</Link>

@@ -4,14 +4,14 @@ import { Header } from '../../UI/Header/Header';
 import { Section } from '../../components/Section/Section';
 import { Container } from '../../components/Container/Container';
 
-export function PizzaPage({ data }) {
+export function PizzaPage({ setModalActive }) {
   return (
     <Section>
       <Container>
         <Header />
-        <Pizza data={ data } />
+        <Pizza setModalActive={setModalActive} />
       </Container>
-        <Footer />
+      <Footer />
     </Section>
   );
 }

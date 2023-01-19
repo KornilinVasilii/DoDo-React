@@ -4,27 +4,27 @@ import { H2 } from '../H2/H2';
 import { useState, useEffect } from "react";
 
 
-export function Pizza() { 
-    const [pizza, setPizza] = useState([]);
+export function Pizza({ setModalActive }) {
+  const [pizza, setPizza] = useState([]);
 
-    useEffect(() => {
-      fetch("http://localhost:5000/pizzas", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
-        },
-      })
-        .then((pizza) => pizza.json())
-        .then((d) => setPizza(d.pizza));
-    }, []);
+  useEffect(() => {
+    fetch("http://localhost:5000/pizzas", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+    })
+      .then((pizza) => pizza.json())
+      .then((d) => setPizza(d.pizza));
+  }, []);
 
   return (
     <div>
       <H2 text="Пицца" />
       <Gridcards>
         {pizza.map((el, i) => (
-          <Card key={i} {...el} text="Выбрать" />
+          <Card key={i} {...el} text="Выбрать" setModalActive={setModalActive} />
         ))}
       </Gridcards>
     </div>

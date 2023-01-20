@@ -4,27 +4,27 @@ import { SmallCards } from '../SmallCards/SmallCards';
 import s from './Popular.module.css'
 import { useState, useEffect } from 'react';
 
-export function Popular() { 
+export function Popular({ setLook }) {
   const [novelty, setNovelty] = useState([]);
 
-    useEffect(() => {
-      fetch("http://localhost:5000/novelty", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
-        },
-      })
-        .then((novelty) => novelty.json())
-        .then((d) => setNovelty(d.novelty));
-    }, []);
-  console.log(novelty)
+  useEffect(() => {
+    fetch("http://localhost:5000/novelty", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+    })
+      .then((novelty) => novelty.json())
+      .then((d) => setNovelty(d.novelty));
+  }, []);
+  console.log(novelty);
   return (
     <div className={s.popular}>
       <H2 text="Новое и популярное" />
       <Gridcards>
         {novelty.map((el, i) => (
-          <SmallCards key={i} {...el} />
+          <SmallCards key={i} {...el} setLook={setLook} />
         ))}
       </Gridcards>
     </div>

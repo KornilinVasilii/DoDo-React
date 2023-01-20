@@ -6,6 +6,7 @@
 body {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
+
 }
 .thumbs-wrapper {
   display: none;
@@ -16,3 +17,4 @@ body {
 .control-prev {
   border-radius: 20px 0 0 20px;
 }
+

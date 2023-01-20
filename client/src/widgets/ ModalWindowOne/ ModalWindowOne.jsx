@@ -1,10 +1,11 @@
 import { RadioBtn } from '../RadioBtn/RadioBtn';
 import { RadioButton } from '../RadioButton/RadioButton';
+import { BtnModal } from '../../components/BtnModal/BtnModal';
 import s from './ModalWindowOne.module.css';
 import img from './moduleImage.png';
 import close from './close.svg';
 import elipse from './Ellipse.svg';
-export function ModalWindowOne({ active, handlerClick, setModalActive }) {
+export function ModalWindowOne({ active,setModalActive }) {
   return (
     <div
       className={active ? s.win : s.active}
@@ -28,6 +29,7 @@ export function ModalWindowOne({ active, handlerClick, setModalActive }) {
               <p>599 ₽</p>
             </div>
           </div>
+          <BtnModal/>
         </div>
         <input
           onClick={() => setModalActive(false)}

@@ -3,10 +3,10 @@ import image from './image.png'
 import { BtnModal } from '../../components/BtnModal/BtnModal'
 import svg from './btn_out.svg'
 
-export function ModalWindowTwo() {
+export function ModalWindowTwo({ look,setLook }) {
   return (
-    <>
-      <div className={s.modal_section}>
+    <div className={look ? s.modal : s.active} onClick={() => setLook(false)}>
+      <div className={s.modal_section} onClick={(e) => e.stopPropagation()} >
         <img src={image} alt="" className={s.modal_img} />
         <div className={s.modal_info}>
           <h3 className={s.modal_title}>
@@ -19,8 +19,8 @@ export function ModalWindowTwo() {
           </p>
           <BtnModal />
         </div>
-        <input type="image" src={svg} className={s.btn_out}></input>
+        <input onClick={() => setLook(false)} type="image" src={svg} className={s.btn_out}></input>
       </div>
-    </>
+    </div>
   );
 }

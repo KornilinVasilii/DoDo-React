@@ -40,26 +40,7 @@ export function Basket() {
             </div>
           </div>
 
-          {/* <div className={s.order}>
-            <div className={s.order_pic}>
-              <img src={logo} alt="" className={s.order_logo} />
-              <div className={s.order_info}>
-                <p className={s.order_name}>Чиззи чеддер</p>
-                <p className={s.order_size}>
-                  Средняя 30 см, традиционное тесто
-                </p>
-              </div>
-            </div>
-            <div className={s.order_elem}>
-              <div className={s.button}>
-                <button className={s.order_button}>-</button>
-                <span className={s.order_num}>1</span>
-                <button className={s.order_button}>+</button>
-              </div>
-              <p className={s.order_price}>3 799 ₽</p>
-              <img src={svg} alt="svg" className="order_svg" />
-            </div>
-          </div> */}
+
 
           <p className={s.add}>Добавить к заказу?</p>
 
@@ -86,7 +67,7 @@ export function Basket() {
             <span className={s.order_sum_span}>4 792 ₽</span>
           </div>
           <div className={s.basket_btn}>
-            <Link className={ s.link } to='/home'>
+            <Link className={ s.link } to='/'>
             <OrderButtonLeft text="Вернуться в меню" />
             </Link >
             <Link className={ s.secondLink } to='/order'>

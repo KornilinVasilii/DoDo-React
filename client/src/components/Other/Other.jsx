@@ -5,26 +5,26 @@ import { useState, useEffect } from 'react';
 import { SmallCards } from '../SmallCards/SmallCards';
 
 
-export function Other() {
-      const [other, setOther] = useState([]);
+export function Other({ setLook }) {
+  const [other, setOther] = useState([]);
 
-      useEffect(() => {
-        fetch('http://localhost:5000/other', {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
-          },
-        })
-          .then((other) => other.json())
-          .then((d) => setOther(d.other));
-      }, []);
+  useEffect(() => {
+    fetch("http://localhost:5000/other", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+    })
+      .then((other) => other.json())
+      .then((d) => setOther(d.other));
+  }, []);
   return (
     <div>
       <H2 text="Другие товары" />
       <Gridcards>
         {other.map((el, i) => (
-          <SmallCards key={i} {...el} text="В корзину" />
+          <SmallCards key={i} {...el} setLook={setLook} />
         ))}
       </Gridcards>
     </div>

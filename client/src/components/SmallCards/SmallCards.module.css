@@ -7,6 +7,9 @@
   box-shadow: 0px 0px 15px rgba(6, 5, 50, 0.05);
   
 }
+.small_card:hover {
+  box-shadow: none;
+}
 
 
 .small_text {

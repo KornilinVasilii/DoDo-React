@@ -4,14 +4,14 @@ import { Other } from '../../components/Other/Other';
 import { Section } from '../../components/Section/Section';
 import { Container } from '../../components/Container/Container';
 
-export function OtherPage() {
+export function OtherPage({ setLook}) {
   return (
     <Section>
       <Container>
         <Header />
-        <Other />
+        <Other setLook={setLook} />
       </Container>
-        <Footer />
+      <Footer />
     </Section>
   );
 }

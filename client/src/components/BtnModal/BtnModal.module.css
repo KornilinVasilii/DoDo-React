@@ -13,6 +13,8 @@
   line-height: 22px;
   text-align: center;
   color: #ffffff;
+  position: relative;
+  top: 13%;
 }
 
 .btn_modal:hover {

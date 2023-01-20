@@ -13,16 +13,29 @@ import { ComboPage } from "./pages/ComboPage/ComboPage";
 import { DessertsPage } from "./pages/DessertsPage/DessertsPage";
 import { OtherPage } from "./pages/OtherPage/OtherPage";
 import { useState } from "react";
+import { useRoutes } from "react-router-dom";
+import { ModalWindowTwo } from './widgets/ModalWindowTwo/ModalWindowTwo'
 
 function App() {
   const [modalActive, setModalActive] = useState(false);
+  const [activ, setActive] = useState(false);
+  //   let element = useRoutes([
+  //     {
+  //       path: '/',
+  //       element: <Home/>
+  //     }
+  //   ]
+
+  // )
 
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={<Home setModalActive={setModalActive} setLook={setActive} />}
+        />
         <Route path="/basket" element={<Basket />} />
-        <Route path="/home" element={<Home />} />
         <Route path="/order" element={<Order />} />
         <Route path="/orderstatus" element={<OrderStatus />} />
         <Route
@@ -36,11 +49,12 @@ function App() {
           element={<ComboPage setModalActive={setModalActive} />}
         />
         <Route path="/desserts" element={<DessertsPage />} />
-        <Route path="/other" element={<OtherPage />} />
+        <Route path="/other" element={<OtherPage setLook={setActive} />} />
       </Routes>
       {modalActive && (
         <ModalWindowOne active={modalActive} setModalActive={setModalActive} />
       )}
+      {activ && (<ModalWindowTwo look={activ} setLook={setActive} />)}
     </>
   );
 }

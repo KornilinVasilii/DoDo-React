@@ -16,7 +16,6 @@ import { useState } from "react";
 import { useRoutes } from "react-router-dom";
 import  Portal from './components/Portal/Portal'
 
-
 function App() {
   const [modalActive, setModalActive] = useState(false);
   const [activ, setActive] = useState(false);
@@ -44,7 +43,6 @@ function App() {
         <Route path="/desserts" element={<DessertsPage />} />
         <Route path="/other" element={<OtherPage setLook={setActive} />} />
       </Routes>
-
       <Portal>
         {modalActive && (
           <ModalWindowOne

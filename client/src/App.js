@@ -14,7 +14,6 @@ import { DessertsPage } from "./pages/DessertsPage/DessertsPage";
 import { OtherPage } from "./pages/OtherPage/OtherPage";
 import { useState } from "react";
 import { useRoutes } from "react-router-dom";
-import { ModalWindowTwo } from './widgets/ModalWindowTwo/ModalWindowTwo'
 import  Portal from './components/Portal/Portal'
 
 function App() {
@@ -55,6 +54,8 @@ function App() {
       <Portal>
         {activ && <ModalWindowTwo look={activ} setLook={setActive} />}
       </Portal>
+
+
     </>
   );
 }

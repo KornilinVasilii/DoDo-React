@@ -1,6 +1,7 @@
 {
   "snacks": [
     {
+      "id": 1,
       "title": "Томатный суп с гренками",
       "img": "http://127.0.0.1:5000/photos/items/snacks/snack-1.webp",
       "imgX2": "http://127.0.0.1:5000/photos/items/snacks/snack-1-2x.webp",
@@ -8,6 +9,7 @@
       "price": "99"
     },
     {
+      "id": 2,
       "title": "Томатный суп с митболами",
       "img": "http://127.0.0.1:5000/photos/items/snacks/snack-1.webp",
       "imgX2": "http://127.0.0.1:5000/photos/items/snacks/snack-1-2x.webp",
@@ -15,6 +17,7 @@
       "price": "99"
     },
     {
+      "id": 3,
       "title": "Додстер",
       "img": "http://127.0.0.1:5000/photos/items/snacks/snack-2.webp",
       "imgX2": "http://127.0.0.1:5000/photos/items/snacks/snack-2-2x.webp",
@@ -22,6 +25,7 @@
       "price": "159"
     },
     {
+      "id": 4,
       "title": "Острый Додстер",
       "img": "http://127.0.0.1:5000/photos/items/snacks/snack-3.webp",
       "imgX2": "http://127.0.0.1:5000/photos/items/snacks/snack-3-2x.webp",
@@ -29,6 +33,7 @@
       "price": "159"
     },
     {
+      "id": 5,
       "title": "Додстер Чипотле",
       "img": "http://127.0.0.1:5000/photos/items/snacks/snack-4.webp",
       "imgX2": "http://127.0.0.1:5000/photos/items/snacks/snack-4-2x.webp",

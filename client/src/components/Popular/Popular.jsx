@@ -18,7 +18,6 @@ export function Popular({ setLook }) {
       .then((novelty) => novelty.json())
       .then((d) => setNovelty(d.novelty));
   }, []);
-  console.log(novelty);
   return (
     <div className={s.popular}>
       <H2 text="Новое и популярное" />

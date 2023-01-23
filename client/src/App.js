@@ -15,6 +15,7 @@ import { OtherPage } from "./pages/OtherPage/OtherPage";
 import { useState } from "react";
 import { useRoutes } from "react-router-dom";
 import { ModalWindowTwo } from './widgets/ModalWindowTwo/ModalWindowTwo'
+import  Portal from './components/Portal/Portal'
 
 function App() {
   const [modalActive, setModalActive] = useState(false);
@@ -51,10 +52,17 @@ function App() {
         <Route path="/desserts" element={<DessertsPage />} />
         <Route path="/other" element={<OtherPage setLook={setActive} />} />
       </Routes>
-      {modalActive && (
-        <ModalWindowOne active={modalActive} setModalActive={setModalActive} />
-      )}
-      {activ && (<ModalWindowTwo look={activ} setLook={setActive} />)}
+      <Portal>
+        {modalActive && (
+          <ModalWindowOne
+            active={modalActive}
+            setModalActive={setModalActive}
+          />
+        )}
+      </Portal>
+      <Portal>
+        {activ && <ModalWindowTwo look={activ} setLook={setActive} />}
+      </Portal>
     </>
   );
 }

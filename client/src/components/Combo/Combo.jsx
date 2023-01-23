@@ -17,7 +17,6 @@ export function Combo({ setModalActive }) {
       .then((combo) => combo.json())
       .then((d) => setCombo(d.combo));
   }, []);
-  console.log(combo);
 
   return (
     <div>

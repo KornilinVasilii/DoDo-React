@@ -17,7 +17,6 @@ export function Desserts() {
           .then((desserts) => desserts.json())
           .then((d) => setDesserts(d.desserts));
       }, []);
-  console.log(desserts);
   return (
     <div>
       <H2 text="Десерты" />

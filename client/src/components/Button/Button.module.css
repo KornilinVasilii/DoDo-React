@@ -16,6 +16,10 @@
 .button:active {
   opacity: 0.7;
 }
+.button:hover {
+  background-color: #FFF0E6;
+  color:#D15700;
+}
 .btn {
  padding: 9px 29px 9px 29px;
       font-family: 'Nunito';
@@ -34,4 +38,8 @@
 }
 .btn:active {
   opacity: 0.7;
+}
+.btn:hover {
+  background-color: #f96900;
+  color: #ffffff;
 }

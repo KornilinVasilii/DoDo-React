@@ -20,14 +20,6 @@ import  Portal from './components/Portal/Portal'
 function App() {
   const [modalActive, setModalActive] = useState(false);
   const [activ, setActive] = useState(false);
-  //   let element = useRoutes([
-  //     {
-  //       path: '/',
-  //       element: <Home/>
-  //     }
-  //   ]
-
-  // )
 
   return (
     <>

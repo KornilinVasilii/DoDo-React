@@ -13,20 +13,11 @@ import { ComboPage } from "./pages/ComboPage/ComboPage";
 import { DessertsPage } from "./pages/DessertsPage/DessertsPage";
 import { OtherPage } from "./pages/OtherPage/OtherPage";
 import { useState } from "react";
-import { useRoutes } from "react-router-dom";
-import { ModalWindowTwo } from './widgets/ModalWindowTwo/ModalWindowTwo'
+import { ModalWindowTwo } from "./widgets/ModalWindowTwo/ModalWindowTwo";
 
 function App() {
   const [modalActive, setModalActive] = useState(false);
   const [activ, setActive] = useState(false);
-  //   let element = useRoutes([
-  //     {
-  //       path: '/',
-  //       element: <Home/>
-  //     }
-  //   ]
-
-  // )
 
   return (
     <>
@@ -54,7 +45,7 @@ function App() {
       {modalActive && (
         <ModalWindowOne active={modalActive} setModalActive={setModalActive} />
       )}
-      {activ && (<ModalWindowTwo look={activ} setLook={setActive} />)}
+      {activ && <ModalWindowTwo look={activ} setLook={setActive} />}
     </>
   );
 }

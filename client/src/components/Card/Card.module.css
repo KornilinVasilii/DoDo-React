@@ -5,10 +5,14 @@
   display: grid;
 }
 
+
 .img {
   margin: 0 15px 0 15px 0;
   width: 220px;
   height: 220px;
+}
+.img:hover {
+  transform: translateY(-4px);
 }
 
 .h3 {
